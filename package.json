@@ -4,12 +4,15 @@
   "description": "none",
   "license": "MIT",
   "scripts": {
-    "start": "babel-node src",
-    "test": "eslint src && flow && jest --coverage",
+    "start": "babel-node src/server",
+    "test": "eslint src && flow ",
     "precommit": "yarn test",
     "prepush": "yarn test"
   },
-  "dependencies": {},
+  "dependencies": {
+    "compression": "^1.6.2",
+    "express": "^4.15.2"
+  },
   "devDependencies": {
     "babel-cli": "^6.23.0",
     "babel-eslint": "^7.1.1",
